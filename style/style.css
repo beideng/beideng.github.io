@@ -1,0 +1,305 @@
+.container{
+	width:100%;
+	height:100vh;
+	background-color: #FCFAFC;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Quattrocento Sans', sans-serif;
+	scroll-behavior: smooth;
+	color: #22386b;
+
+}
+
+.hero{
+	position: relative;
+	top: 0;
+	left: 1%;
+	width: 100%;
+	height: 100%;
+
+}
+.one{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.two{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.three{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.four{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.five{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.six{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+.seven{
+	position: fixed;
+	margin-top: -80px;
+	margin-left: -100px;
+	background-attachment: fixed;
+
+}
+
+header {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	margin: auto;
+
+}
+
+nav {
+	position: absolute;
+	bottom: 20px;
+	right: 0px;
+	width: 60%;
+	height: 50px;
+
+}
+
+#beideng {
+	font-size: 6vw;
+	margin: 0;
+	text-align: center;
+
+	 -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#about{
+	background-color: #FCFAFC;
+}
+.about-links {
+	display: inline-block;
+	position: absolute;
+	float: right;
+	text-align: right;
+ 	font-size: 5vw;
+ 	top:0;
+ 	right:5%;
+}
+.about-links:hover{
+	background-color:#E9EBF8;
+}
+#dev-link{
+}
+#dev-link:hover + #dev-text {
+	opacity: 1.0;
+}
+.hover-text{
+	position:absolute;
+	text-align: left;
+	margin-top: 15%;
+	margin-left: 10%;
+	width: 50%;
+	font-size: 2vw;
+	opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+#student-link{
+}
+#student-link:hover + #student-text{
+	opacity: 1.0;
+}
+#creator-text{
+	width: 70%;
+}
+
+#creator-link:hover + #creator-text{
+	opacity: 1.0;
+}
+#skills-img{
+	position: relative;
+	margin-top: 8%;
+	width: 65%;
+	height: 65%;
+}
+
+#projects {
+	background-color: #FCFAFC;
+}
+.hover-text2{
+	position:absolute;
+	text-align: left;
+	float: right;
+	margin-top: 10%;
+	margin-left: 40%;
+	width: 50%;
+	font-size: 2vw;
+	opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.proj-links {
+	display: inline-block;
+	position: absolute;
+	float: left;
+	text-align: left;
+ 	font-size: 5vw;
+ 	top:0;
+ 	left:5%;
+}
+.proj-links:hover{
+	background-color:#E9EBF8;
+}
+#sst:hover + #sst-text{
+	opacity: 1.0;
+}
+
+#focus:hover + #focus-text{
+	opacity: 1.0;
+}
+#trip:hover + #trip-text{
+	opacity: 1.0;
+}
+
+#online-img{
+	position: relative;
+	margin-top: 8%;
+	width: 60%;
+	height: 60%;
+}
+
+#focus-img{
+	position: relative;
+	margin-top: 8%;
+	margin-left: 30%;
+	width: 30%;
+	height: 30%;
+}
+
+#trip-img {
+	position: relative;
+	margin-top: 8%;
+	margin-left: 30%;
+	width: 40%;
+	height: 40%;
+}
+
+#contact {
+	background-color: #FCFAFC;
+
+}
+
+#lets-connect{
+	position: absolute;
+	float: right;
+	text-align: left;
+ 	font-size: 2vw;
+ 	margin-top:20%;
+ 	margin-left:60%;
+}
+#scrollDiv {
+	position: absolute;
+	margin: auto;
+	top: 450;
+ 	right: 0;
+ 	bottom: 2%;
+ 	left: 0;
+ 	text-align: center;
+
+}
+
+#text{
+	position: absolute;
+ 	margin: auto;
+ 	top: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	width: 100%;
+  	height: 200px;
+  	border-radius: 3px;
+}
+
+.links {
+	width: 20%;
+	margin-left: 2.5%;
+	height: 70%;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	color: #22386b;
+	transition: background-color 0.5s;
+
+}
+.links:hover {
+		background-color: #E9EBF8;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

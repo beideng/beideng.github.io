@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <link rel="stylesheet" href="style/style.css">
+		  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div class="hero">
+			<img class="one" src="img/one.png">
+			<img class="two" src="img/two.png">
+  			<img class="three" src="img/three.png">
+ 			<img class="four" src="img/four.png">
+			<img class="five" src="img/five.png">
+			<img class="six" src="img/six.png">
+			<img class="seven" src="img/seven.png">
+		</div>
+		
+		<header id="navbar">
+			<nav>
+				<a href="#home">
+					<div class="links">
+						Home
+					</div>
+				</a>
+				<a href="#about">
+					<div class="links">
+						About
+					</div>
+				</a>
+				<a href="#projects">
+					<div class="links">
+						Projects
+					</div>
+				</a>
+				<a href="#contact">
+					<div class="links">
+						Contact
+					</div>
+				</a>
+			</nav>		
+		</header>
+		
+
+		<div id="home" class="container">
+			<div id="text">
+				<p style="font-size:2vw; text-align: center;">Hi, I'm</p>
+				<h1 id="beideng">Bei Deng</h1>
+			</div>
+			<div id="scrollDiv">
+<!-- 				scroll for more
+ -->			</div>
+			
+		</div>
+
+		<div id="about" class="container">
+			<div style="position:relative;">
+				<div class="about-links" id="dev-link" style="margin-top:15%;">Developer</div>
+				<div class="hover-text" id="dev-text">
+				I love problem solving. 
+				As a developer, I have worked on full-stack web applications, mobile applications, and small-scale programs with back-end code in C++/C and Java. I gained experience with collaboration and teamwork, demonstrated responsibility for myself, and delivered consistent, quality code at my internships. Wherever I go next, I hope to use the skills I've gained and make a difference.
+				</div>
+				<div class="about-links" id="student-link" style="margin-top:25%;">Student</div>
+				<div class="hover-text" id="student-text">
+				I am a member of University of Southern California, Class of 2019, pursuing a Bachelors of Science in Computer Science 
+				and Honors in Multimedia Studies.
+				
+				As an undergrad at USC, I volunteered as a tutor for the South Central community with Teach for Los Angeles, as well as 
+				created a curriculum in computer science for 3rd graders with Joint Educational Project (JEP).  I maintained web content 
+				for USC Mureality, an art and activism club, and sharpened my technical skills with Scope, USC's computer science club.
+				</div>
+				<div class="about-links" id="creator-link"style="margin-top:35%;">Creator</div>
+				<div class="hover-text" id="creator-text">
+					Media + technology. Watch me create.
+					<img id="skills-img" src="img/skills.png">
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="container">
+			<div style="position:relative;">
+				<div class="proj-links" id="sst" style="margin-top:10%;">SST_Online</div>
+				<div class="hover-text2" id="sst-text">
+				Coded using Processing (Java). This interactive, multi-state project explores social media use amongst teens, the addictive quality of social media, and how excessive screen time affects mental health. <br />
+				<img src="img/online.png" id="online-img">
+				</div>
+				<div class="proj-links" id="focus" style="margin-top:20%;">Focus!</div>
+				<div class="hover-text2" id="focus-text">
+				Software engineering group project. Android mobile application that allows users to block other mobile applications and their notifications. Coded in Java, utilize multithreading, services, external API. <br />
+				<img src="img/focus.png" id="focus-img">
+				</div> 
+				<div class="proj-links" id="trip" style="margin-top:30%;">Trippin'</div>
+				<div class="hover-text2" id="trip-text">
+				Software engineering group project. Trippin' is a Java FX desktop application with MySQL database that is a one-stop shop for roadtrips and adventure. Server-client architecture, client/server multithreading, geocoding and map API. <br />
+				<img src="img/trip.png" id="trip-img">
+				</div>
+
+			</div>
+		</div>
+
+		<div id="contact" class="container">
+			<div style="position:relative;">
+ 			<div id="lets-connect">
+				<h1>Connect with me</h1>
+				<a href="mailto:beideng@usc.edu"><img src="img/email.png" style="width:100px; height:100px; padding:2%;"></a>
+				<a href="https://www.linkedin.com/in/bei-deng-70071b106/" target="_blank"><img src="img/linkedin.png" style="width:100px; height:100px; padding:2%;"></a>
+				<a href="img/BeiDengResume.pdf" target="_blank"><img src="img/resume.png" style="width:100px; height:100px; padding:2%;"></a>
+			</div>
+			</div>
+
+		</div>
+
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+			    navbar.classList.add("sticky")
+			  } else {
+			    navbar.classList.remove("sticky");
+			  }
+			}
+
+			window.addEventListener('scroll', scrollFunc);
+			function scrollFunc() {
+				var windowScroll = window.scrollY;
+				if(windowScroll < 2500){
+				var $one = document.getElementsByClassName('one')[0];
+				$one.style.transform = 'translateY(-' + windowScroll/70 + '%)';
+				var $two = document.getElementsByClassName('two')[0];
+				$two.style.transform = 'translateY(' + windowScroll/60 + '%)';
+				var $three = document.getElementsByClassName('three')[0];
+				$three.style.transform = 'translateY(' + windowScroll/10 + '%)';
+				var $four = document.getElementsByClassName('four')[0];
+				$four.style.transform = 'translateY(-' + windowScroll/5 + '%)';
+				var $five = document.getElementsByClassName('five')[0];
+				$five.style.transform = 'translateY(-' + windowScroll/50 + '%)';
+				var $six = document.getElementsByClassName('six')[0];
+				$six.style.transform = 'translateY(-' + windowScroll/200 + '%)';
+				var $seven = document.getElementsByClassName('seven')[0];
+				$seven.style.transform = 'translateY(' + windowScroll/100 + '%)';
+				}
+			}
+
+		</script>
+
+	</body>
+</html>
